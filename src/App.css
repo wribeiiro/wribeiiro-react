@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,600;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;1,100;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+:root {
+    --black: #121214;
+    --dark-gray: #212025;
+    --white: #FFFFFF;
+    --text: #E1E1E6;
+    --purple: #bd93f9;
+    --vue: #04D361;
+    --red: #ec5453;
+    --npurple: #373238;
+    --yellow: #f9bf3f;
+    --synth-purple: #F222FF;
+    --synth-blue: #011EFE;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.wrapper .main_content {
+    width: calc(100% - 260px);
+    margin-left: 260px;
+    z-index: -1;
+}
+
+.wrapper .main_content .info {
+    margin: 60px;
+    color: var(--text);
+    line-height: 25px;
+}
+
+.wrapper .main_content .info {
+    margin-bottom: 20px;
+}
+
+.title {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.title:after {
+    position: absolute;
+    content: '';
+    top: 30px;
+    left: 0;
+    border-bottom: solid 3px var(--vue);
+    width: 130px;
+    transition: .5s;
+}
+
+.btn-outline-vue,
+.btn-outline-vue i {
+    color: var(--vue);
+    background: transparent;
+    background-image: none;
+    border-color: var(--vue);
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.btn-outline-vue:hover {
+    color: var(--vue);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-vue {
+    color: var(--vue) !important;
+}
+
+.text-purple {
+    color: var(--purple);
+}
+
+.text-red {
+    color: var(--red);
+}
+
+.text-text {
+    color: var(--text);
+}
+
+select {
+    background-color: var(--dark-gray);
+    color: var(--text);
+    border: none;
+    cursor: pointer;
+}
+
+section option {
+    cursor: pointer;
+}
+
+.terminal-title,
+.terminal .body,
+.terminal .body span,
+.terminal .body a {
+    font-family: 'JetBrains Mono', monospace !important;
+}
+
+.blink {
+    animation: blinker 1s infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-height: 500px) {}
+
+@media screen and (max-width: 360px) {}
