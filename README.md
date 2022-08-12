@@ -1,3 +1,7 @@
+# wribeiiro-vue ~ My Personal Page
+
+![me to](https://user-images.githubusercontent.com/20648572/181497702-2c358ee6-7a2b-4b0c-a97f-1fcf2ad74e25.gif)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
