@@ -2,15 +2,14 @@ import React from 'react';
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Link
+    Route
   } from 'react-router-dom';
 
 import HomePage from './pages/Home';
-import Education from './pages/Education';
-import SkillXp from './pages/SkillXp';
-import Work from './pages/Work';
-import Contact from './pages/Contact';
+import EducationPage from './pages/Education';
+import SkillXpPage from './pages/SkillXp';
+import WorkPage from './pages/Work';
+import ContactPage from './pages/Contact';
 import Header from './components/Header';
 
 import './App.css';
@@ -23,10 +22,10 @@ const App = () => {
                 <div className="main_content">
                     <Switch>
                         <Route path='/' exact component={HomePage} />
-                        <Route path='/education' component={Education} />
-                        <Route path='/skills' component={SkillXp} />
-                        <Route path='/works' component={Work} />
-                        <Route path='/contact' component={Contact} />
+                        <Route path='/education' component={EducationPage} />
+                        <Route path='/skills' component={SkillXpPage} />
+                        <Route path='/works' component={WorkPage} />
+                        <Route path='/contact' component={ContactPage} />
                     </Switch>
                 </div>
             </div>

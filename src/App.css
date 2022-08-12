@@ -132,6 +132,10 @@ section option {
     animation: blinker 1s infinite;
 }
 
+div.title p {
+    margin-top: 30px;
+}
+
 @keyframes blinker {
     50% {
         opacity: 0;

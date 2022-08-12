@@ -32,11 +32,10 @@ function ContactPage() {
 				<div className="info">
 					<div className="title">
 						<h2>Contact</h2>
+						<p>I'm glad to connect!!</p>
 					</div>
 
 					<div className="contact-container">
-						<p>I'm glad to connect!!</p>
-						<br />
 						<Contact
 							contactData={contactData}
 						/>
