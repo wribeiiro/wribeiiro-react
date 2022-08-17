@@ -13,7 +13,7 @@ function Header() {
 					<div className="text-center me">
 						<img src={imgProfile} alt="Me" title="Me" />
 						<h1 className="name text-center">Wellisson Ribeiro</h1>
-						<span className="description text-vue"> PHP Software Engineer ~</span>
+						<span className="description text-vue"> Full Stack Developer ~</span>
 						<span className="description"> English Student </span>
 						<br/>
 						<select name="selectLanguage" id="selectLanguage">

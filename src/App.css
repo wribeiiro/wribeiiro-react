@@ -94,6 +94,10 @@ a:hover {
     text-align: left;
 }
 
+.text-right {
+    text-align: right;
+}
+
 .text-vue {
     color: var(--vue) !important;
 }
@@ -108,6 +112,10 @@ a:hover {
 
 .text-text {
     color: var(--text);
+}
+
+.text-white {
+    color: var(--white);
 }
 
 select {

@@ -16,121 +16,84 @@
 .banner-image:before {
     position: absolute;
     content: '';
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
 }
 
-.banner-caption p {
-    font-family: 'Satisfy', cursive;
-    font-size: 65px;
-    margin-bottom: 60px;
-    color: var(--text);
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.stack {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.stack span {
+    font-weight: bold;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    font-size: 5rem;
+    --stack-height: calc(100% / var(--stacks) - 1px);
+    --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+    --clip-top: calc(var(--stack-height) * var(--index));
+    --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+    clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+    animation: stack 340ms cubic-bezier(.46, .29, 0, 1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
+    color: var(--white);
     text-shadow: 2px 3px 0 var(--black);
-	position: relative;
 }
 
-.glitch {
-    font-size: 100px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    position: relative;
-    font-weight: 700;
+.stack span:nth-child(odd) {
+    --glitch-translate: 8px;
 }
 
-.glitch:before {
-    left: -3px;
-    text-shadow: 4px 0 var(--synth-purple);
-    animation: glitch-1 0.8s infinite ease-in-out alternate-reverse;
+.stack span:nth-child(even) {
+    --glitch-translate: -8px;
 }
 
-.glitch:after {
-    left: 3px;
-    text-shadow: -5px 0 var(--synth-blue);
-    animation: glitch-2 0.8s infinite ease-in-out alternate-reverse;
-}
-
-.glitch:before,
-.glitch:after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    width: 100%;
-    clip: rect(0, 0, 0, 0);
-}
-
-@keyframes glitch-1 {
+@keyframes stack {
     0% {
-        clip: rect(36px, 9999px, 9px, 0);
+        opacity: 0;
+        transform: translateX(-50%);
+        text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
     }
 
-    25% {
-        clip: rect(25px, 9999px, 99px, 0);
+    60% {
+        opacity: 0.5;
+        transform: translateX(50%);
     }
 
-    50% {
-        clip: rect(50px, 9999px, 102px, 0);
-    }
-
-    75% {
-        clip: rect(30px, 9999px, 92px, 0);
+    80% {
+        transform: none;
+        opacity: 1;
+        text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
     }
 
     100% {
-        clip: rect(91px, 9999px, 98px, 0);
+        text-shadow: none;
     }
 }
 
-@keyframes glitch-2 {
+@keyframes glitch {
     0% {
-        top: -3px;
-        left: 3px;
-        clip: rect(65px, 9999px, 119px, 0);
+        text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+        transform: translate(var(--glitch-translate));
     }
 
-    25% {
-        top: -7px;
-        left: 5px;
-        clip: rect(79px, 9999px, 19px, 0);
+    2% {
+        text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
     }
 
-    50% {
-        top: 15px;
-        left: 3px;
-        clip: rect(68px, 9999px, 11px, 0);
-    }
-
-    75% {
-        top: 15px;
-        left: -5px;
-        clip: rect(95px, 9999px, 53px, 0);
-    }
-
-    100% {
-        top: -3px;
-        left: 3px;
-        clip: rect(31px, 9999px, 149px, 0);
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .banner-caption p {
-        font-size: 30px;
-    }
-
-    .btn-outline-vue {
-        font-size: 12px !important;
-        letter-spacing: none;
-    }
-
-    .glitch {
-        font-size: 50px;
-    }
-
-    .banner-caption {
-        margin: 0 auto;
-        padding: 40px;
+    4%, 100% {
+        text-shadow: none;
+        transform: none;
     }
 }

@@ -6,8 +6,7 @@ import Home from '../../components/Home';
 function HomePage() {
     const data = {
         background: 'https://www.wribeiiro.com/bg-min.jpg',
-        smallText: "Wellisson Ribeiro",
-        smallSecondText: "PHP Software Engineer",
+        centerText: "Full Stack Developer",
         terminalTitle: "root@wribeiiro: ~"
     }
 
@@ -17,10 +16,9 @@ function HomePage() {
                 <div className="banner">
                     <Home
                         background={data.background}
-                        text={data.smallSecondText}
-                        secText={data.smallSecondText}
-                        aboutText={data.smallSecondText}
+                        centerText={data.centerText}
                         terminalTitle={data.terminalTitle}
+                        aboutText={data.terminalTitle}
                     >
                     </Home>
                 </div>

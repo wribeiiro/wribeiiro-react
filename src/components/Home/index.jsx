@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'; // ES6
 import './style.css';
 import Terminal from '../../components/Terminal';
 
-function Home({ background, text, secText, aboutText, terminalTitle }) {
+function Home({ background, centerText, terminalTitle, aboutText }) {
 	return (
 		<Fragment>
 			<div className="home banner">
@@ -13,17 +13,21 @@ function Home({ background, text, secText, aboutText, terminalTitle }) {
 					className="banner-image"
 					style={{background: 'url(' + background + ')' }
 				}>
-					<div className="banner-caption">
-						<div className="caption-text text-left">
-							<div className="glitch">{text}</div>
-							<p className="text">{secText}</p>
-							<Terminal
-								aboutText={aboutText}
-								terminalTitle={terminalTitle}
-							>
-							</Terminal>
-						</div>
-					</div>
+                    <div className="banner-caption">
+                        <div className="container">
+                            <div className="stack" style={{'--stacks': 3}}>
+                                <span className="text-center" style={{'--index': 0}}>{centerText}</span>
+                                <span className="text-center" style={{'--index': 1}}>{centerText}</span>
+                                <span className="text-center" style={{'--index': 2}}>{centerText}</span>
+                            </div>
+                        </div>
+
+                        <Terminal
+                            aboutText={aboutText}
+                            terminalTitle={terminalTitle}
+                        >
+                        </Terminal>
+                    </div>
 				</div>
 			</div>
 		</Fragment>
@@ -32,8 +36,7 @@ function Home({ background, text, secText, aboutText, terminalTitle }) {
 
 Home.propTypes = {
 	background: PropTypes.string.isRequired,
-	text: PropTypes.string.isRequired,
-	secText: PropTypes.string.isRequired,
+	centerText: PropTypes.string.isRequired,
 	aboutText: PropTypes.string.isRequired,
 	terminalTitle: PropTypes.string.isRequired
 }
