@@ -23,7 +23,7 @@ function Header() {
 			<div className="sidebar show">
 				<div className="sidebar__avatar">
 					<div className="text-center me">
-						<img src={menu.info.background} alt="Me" title="Me" />
+						<img src={menu.info.avatar} alt="Me" title="Me" />
 						<h1 className="name text-center">{menu.info.firstText}</h1>
 						<span className="description text-vue">{menu.info.secondText}</span>
 						<span className="description">{menu.info.thirdText}</span>
