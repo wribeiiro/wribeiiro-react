@@ -1,33 +1,44 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect, useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import TranslationContext from "../../context/TranslationContext";
 
 import './style.css';
 
 function Header() {
-	const imgProfile = "https://avatars.githubusercontent.com/u/20648572?s=460&u=47a55caca6dbc315d1932aaf77eefa20b2002baf&v=4";
+    const { getTranslationFromStorage, getOptionTranslationFromStorage, setTranslationInStorage } = useContext(TranslationContext);
+    const [language, setLanguage] = useState('en');
+    const { menu } = getTranslationFromStorage();
+
+    const saveLanguage = (event) => {
+        setTranslationInStorage(event.target.value);
+        setLanguage(event.target.value);
+    }
+
+    useEffect(() => {
+        setLanguage(getOptionTranslationFromStorage());
+    }, []);
 
 	return (
 		<Fragment>
 			<div className="sidebar show">
 				<div className="sidebar__avatar">
 					<div className="text-center me">
-						<img src={imgProfile} alt="Me" title="Me" />
-						<h1 className="name text-center">Wellisson Ribeiro</h1>
-						<span className="description text-vue"> Full Stack Developer ~</span>
-						<span className="description"> English Student </span>
+						<img src={menu.info.background} alt="Me" title="Me" />
+						<h1 className="name text-center">{menu.info.firstText}</h1>
+						<span className="description text-vue">{menu.info.secondText}</span>
+						<span className="description">{menu.info.thirdText}</span>
 						<br/>
-						<select name="selectLanguage" id="selectLanguage">
-							<option value={'eu'} defaultValue={1}>🇺🇸 English</option>
-							<option value={'pt'}> 🇧🇷 Portuguese</option>
+						<select name="selectLanguage" id="selectLanguage" onChange={saveLanguage} value={language}>
+                            {menu.info.languageOptions.map((value, index) => {
+                               return <option key={index} value={value.value} defaultValue={language === value.value}>{value.name}</option>;
+                            })}
 						</select>
 					</div>
 				</div>
 				<ul>
-					<Link to="/" className="btn mr-5"> &#62; Home </Link>
-					<Link to="/education" className="btn mr-5"> &#62; Education </Link>
-					<Link to="/skills" className="btn mr-5"> &#62; Skills &amp; Experience </Link>
-					<Link to="/works" className="btn mr-5"> &#62; Works and Projects </Link>
-					<Link to="/contact" className="btn mr-5"> &#62; Contact </Link>
+                    {menu.items.map((value, index) => {
+                        return <Link key={index} to={value.route} className="btn mr-5"> &#62; {value.name} </Link>;
+                    })}
 				</ul>
 			</div>
 		</Fragment>

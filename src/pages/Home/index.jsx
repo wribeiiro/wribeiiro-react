@@ -6,7 +6,7 @@ import Home from '../../components/Home';
 function HomePage() {
     const data = {
         background: 'https://www.wribeiiro.com/bg-min.jpg',
-        centerText: "Full Stack Developer",
+        centerText: "Fullstack Developer",
         terminalTitle: "root@wribeiiro: ~"
     }
 

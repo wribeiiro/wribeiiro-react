@@ -52,11 +52,11 @@
 }
 
 .stack span:nth-child(odd) {
-    --glitch-translate: 8px;
+    --glitch-translate: 38px;
 }
 
 .stack span:nth-child(even) {
-    --glitch-translate: -8px;
+    --glitch-translate: -38px;
 }
 
 @keyframes stack {

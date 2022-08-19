@@ -27,7 +27,6 @@ function WorkPage() {
         getWorkData();
     }, [])
 
-
 	return (
 		<div>
 			<section className="work">
