@@ -1,4 +1,4 @@
-# wribeiiro-vue ~ My Personal Page 🚀
+# My Personal Page 🚀
 
 ![perfil](https://user-images.githubusercontent.com/20648572/185815010-27b47c21-c60f-4557-8096-fb625a15f6ba.gif)
 
