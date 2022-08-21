@@ -33,7 +33,11 @@ export default function App() {
     const fetchTranslation = async () => {
         let translation = localStorage.getItem("wribeiiro-translation") ?? 'en';
 
-        await fetch(`http://localhost:3000/data/${translation}.json`, {
+        const endpoint = process.env.NODE_ENV === 'development'
+            ? process.env.REACT_APP_DEVELOPMENT_DOMAIN
+            : process.env.REACT_APP_PRODUCTION_DOMAIN;
+
+        await fetch(`${endpoint}/data/${translation}.json`, {
             method: "GET",
         })
         .then((response) => response.json())

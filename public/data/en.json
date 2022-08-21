@@ -25,7 +25,7 @@
         "info": {
             "avatar": "https://avatars.githubusercontent.com/u/20648572?s=460&u=47a55caca6dbc315d1932aaf77eefa20b2002baf&v=4",
             "firstText": "Wellisson Ribeiro",
-            "secondText": "Fullstack Developer ~ ",
+            "secondText": "Backend Developer ~ ",
             "thirdText": "English Student",
             "languageOptions": [
                 {
@@ -47,13 +47,13 @@
                 "banner": {
                     "background": "https://cdna.artstation.com/p/assets/images/images/036/822/576/original/karina-formanova-cover-final.gif?1618727960",
                     "firstText": "Wellisson Ribeiro",
-                    "secondText": "Fullstack Developer"
+                    "secondText": "Backend Developer"
                 },
                 "terminal": {
                     "sudoCommand": "sudo --help aboutme",
                     "userRoot": "root@wribeiiro:~$ ",
                     "userRootBlink": "root@wribeiiro:/usr/aboutme/$ <span class='blink'>_</span>",
-                    "aboutComplete": "root@wribeiiro:~$ <span class='text-text'>sudo --help aboutme<br>Brazilian 🇧🇷 {myyear}y, christian ✝️, married 👰, and father of two kids 👶👶. <br>Gratuated in Analysis and Systems Development 🎓 and now, i am an english student 🇺🇸. <br>I've been working as Developer since 2016 with different technologies, but currently <br>my main stack is Back-end with PHP 🐘, Laravel and MySQL. Currently i work as a Software Engineer 👨‍💻 at <a class='text-purple' href='https://www.softexpert.com/'>SoftExpert.</a><br>All packages are up to date</span><br>"
+                    "aboutComplete": "root@wribeiiro:~$ <span class='text-text'>sudo --help aboutme<br>Brazilian 🇧🇷 {myyear}y, christian ✝️️, married 👰‍♀️, and father of two kids 👶👶.<br>In the last few months I became an English student 🇺🇸.<br>I have almost 6 years of experience in the development area, I've used several different tecnologies and languages,<br>also i worked as fullstack most of this time, but what I really like is the backend.<br>Currently I'm Software Engineer at SoftExpert. I'm passionate about PHP, Laravel 🐘 and Databases 🐬.<br>All packages are up to date</span><br>"
                 }
             }
         },
