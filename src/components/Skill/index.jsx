@@ -1,9 +1,8 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-
 import './style.css';
 
-function Skill({ skillsData }) {
+export default function Skill({ skillsData }) {
 	return (
 		<div className="skill-container">
 			{skillsData.map((skill, index) => {
@@ -25,5 +24,3 @@ function Skill({ skillsData }) {
 Skill.propTypes = {
 	skillsData: PropTypes.array.isRequired
 }
-
-export default Skill;

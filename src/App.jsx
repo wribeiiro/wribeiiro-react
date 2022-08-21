@@ -12,50 +12,44 @@ import WorkPage from './pages/Work';
 import ContactPage from './pages/Contact';
 import Header from './components/Header';
 import TranslationContext from './context/TranslationContext';
-
-import translateJsonEn from './data/en.json';
-import translateJsonPtBr from './data/pt-br.json';
-
 import './App.css';
 
-const App = () => {
-    const [translation, setTranslation] = useState({});
-
-    const translations = {
-        'en': translateJsonEn,
-        'pt-br': translateJsonPtBr
-    }
-
-    const checkTranslationFromStorage = () => {
-        let storageTranslation = localStorage.getItem("wribeiiro-translation");
-
-        if (!storageTranslation) {
-            setTranslationInStorage('en');
-            return;
-        }
-
-        setTranslationInStorage(storageTranslation);
-    }
+export default function App() {
+    const [translation, setTranslation] = useState(null);
 
     const getOptionTranslationFromStorage = () => {
         return localStorage.getItem("wribeiiro-translation");
     }
 
     const getTranslationFromStorage = () => {
-        return translations[getOptionTranslationFromStorage()];
+        return translation;
     }
 
-    const setTranslationInStorage = (value) => {
+    const setTranslationInStorage = async (value) => {
+        await fetchTranslation(value);
         localStorage.setItem("wribeiiro-translation", value);
-        setTranslation(translations[value]);
+    }
+
+    const fetchTranslation = async () => {
+        let translation = localStorage.getItem("wribeiiro-translation") ?? 'en';
+
+        await fetch(`http://localhost:3000/data/${translation}.json`, {
+            method: "GET",
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            setTranslation(data);
+        })
+        .catch((error) => {
+            console.log(error);
+        });
     }
 
     useEffect(() => {
-        console.log(translateJsonPtBr);
-        checkTranslationFromStorage();
+        fetchTranslation();
     }, []);
 
-	return (
+	return translation && (
         <Router>
             <TranslationContext.Provider
                 value={{
@@ -81,5 +75,3 @@ const App = () => {
         </Router>
 	);
 }
-
-export default App;

@@ -1,10 +1,9 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 import parse from "html-react-parser";
-
 import './style.css';
 
-function Education({ educationData }) {
+export default function Education({ educationData }) {
 	return (
 		<div className="education-container">
 			{educationData.map((education, index) => {
@@ -28,5 +27,3 @@ function Education({ educationData }) {
 Education.propTypes = {
 	educationData: PropTypes.array.isRequired
 }
-
-export default Education;

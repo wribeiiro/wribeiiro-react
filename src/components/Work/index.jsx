@@ -1,9 +1,8 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-
 import './style.css';
 
-function Work({ workData }) {
+export default function Work({ workData }) {
 	return (
         <div className="work-container">
             {workData.map((work, index) => {
@@ -33,5 +32,3 @@ function Work({ workData }) {
 Work.propTypes = {
 	workData: PropTypes.array.isRequired
 }
-
-export default Work;

@@ -1,12 +1,16 @@
-import React, { useState, useEffect } from 'react';
-
-import './style.css';
-
+import React, { useState, useEffect, useContext } from 'react';
+import TranslationContext from "../../context/TranslationContext";
 import Work from '../../components/Work';
 
-function WorkPage() {
+export default function WorkPage() {
     const [workData, setWorkData] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+
+    const {
+        getTranslationFromStorage,
+    } = useContext(TranslationContext);
+
+    const { pages: { works } } = getTranslationFromStorage();
 
     const getWorkData = async () => {
         fetch("https://gist.githubusercontent.com/wribeiiro/21299d9ac9f66d8758cd494878189ee7/raw/projects.json", {
@@ -32,11 +36,11 @@ function WorkPage() {
 			<section className="work">
 				<div className="info">
 					<div className="title">
-						<h2>Works and Projects</h2>
+						<h2>{works.title}</h2>
 					</div>
 
                     {isLoading ? (
-                        <div> Fetching data, please wait...</div>
+                        <div>{works.info.loadingText}</div>
                     ) :
                         <Work workData={workData} />
                     }
@@ -45,5 +49,3 @@ function WorkPage() {
 		</div>
   	);
 }
-
-export default WorkPage;

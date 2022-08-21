@@ -1,9 +1,8 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-
 import './style.css';
 
-function Experience({ xpData }) {
+export default function Experience({ xpData }) {
 	return (
 		<div className="experience timeline-centered">
 			{xpData.map((xp, index) => {
@@ -33,5 +32,3 @@ function Experience({ xpData }) {
 Experience.propTypes = {
 	xpData: PropTypes.array.isRequired
 }
-
-export default Experience;

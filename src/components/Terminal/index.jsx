@@ -1,9 +1,40 @@
-import React, { Fragment } from 'react';
+import React, { useEffect, useState, Fragment } from 'react';
 import PropTypes from 'prop-types'; // ES6
-
+import parse from "html-react-parser";
 import './style.css';
 
-function Terminal({ terminalTitle, aboutText }) {
+export default function Terminal({ terminalInfo }) {
+    const [writer, setWriter] = useState("");
+    const [aboutComplete, setAboutComplete] = useState("");
+    const [increment, setIncrement] = useState(0);
+
+    const calculateMyYear = (strReplacer) => {
+        return strReplacer.replace("{myyear}", (new Date()).getFullYear() - 1996);
+    }
+
+    const typeWriter = () => {
+        setAboutComplete("");
+        if (increment < terminalInfo.sudoCommand.length) {
+            const timeOut = setTimeout(() => {
+                setWriter(previousValue => previousValue + `<span class="text-text">${terminalInfo.sudoCommand.charAt(increment)}</span>`);
+                setIncrement(previousValue => previousValue + 1);
+                clearTimeout(timeOut);
+            }, 120);
+        }
+
+        setAboutComplete(terminalInfo.userRoot + writer);
+
+        if (increment === terminalInfo.sudoCommand.length) {
+            setTimeout(() => {
+                setAboutComplete(calculateMyYear(terminalInfo.aboutComplete) + terminalInfo.userRootBlink);
+            }, 1000);
+        }
+    }
+
+    useEffect(() => {
+        typeWriter();
+    }, [increment]);
+
 	return (
 		<Fragment>
 			<div className="terminal fade-in">
@@ -13,17 +44,14 @@ function Terminal({ terminalTitle, aboutText }) {
 						<span className="circle yellow"></span>
 						<span className="circle green"></span>
 					</div>
-					<div className="terminal-title">{terminalTitle}</div>
+					<div className="terminal-title">{terminalInfo.userRoot}</div>
 				</div>
-				<pre className="body">{aboutText}</pre>
+				<pre className="body">{parse(aboutComplete)}</pre>
 			</div>
 		</Fragment>
 	);
 }
 
 Terminal.propTypes = {
-	terminalTitle: PropTypes.string.isRequired,
-	aboutText: PropTypes.string.isRequired,
+	terminalInfo: PropTypes.object.isRequired
 }
-
-export default Terminal;

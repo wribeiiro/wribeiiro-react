@@ -1,0 +1,215 @@
+{
+    "menu": {
+        "items": [
+            {
+                "name": "Início",
+                "route": "/"
+            },
+            {
+                "name": "Formação",
+                "route": "/education"
+            },
+            {
+                "name": "Habilidades e Experiência",
+                "route": "/skills"
+            },
+            {
+                "name": "Projetos",
+                "route": "/works"
+            },
+            {
+                "name": "Contato",
+                "route": "/contact"
+            }
+        ],
+        "info": {
+            "avatar": "https://avatars.githubusercontent.com/u/20648572?s=460&u=47a55caca6dbc315d1932aaf77eefa20b2002baf&v=4",
+            "firstText": "Wellisson Ribeiro",
+            "secondText": "Desenvolvedor Fullstack ~ ",
+            "thirdText": "Estudande de Inglês",
+            "languageOptions": [
+                {
+                    "name": "🇺🇸 Inglês",
+                    "value": "en"
+                },
+                {
+                    "name": "🇧🇷 Português",
+                    "value": "pt-br"
+                }
+            ]
+        }
+    },
+    "pages": {
+        "home": {
+            "title": "",
+            "subtitle": "",
+            "info": {
+                "banner": {
+                    "background": "https://cdna.artstation.com/p/assets/images/images/036/822/576/original/karina-formanova-cover-final.gif?1618727960",
+                    "firstText": "Wellisson Ribeiro",
+                    "secondText": "Desenvolvedor Fullstack"
+                },
+                "terminal": {
+                    "sudoCommand": "sudo --ajuda sobremim",
+                    "userRoot": "root@wribeiiro:~$ ",
+                    "userRootBlink": "root@wribeiiro:/usr/aboutme/$ <span class='blink'>_</span>",
+                    "aboutComplete": "root@wribeiiro:~$ <span class='text-text'>sudo --ajuda sobremim<br>Brasileiro 🇧🇷 {myyear}, cristão ✝️, casado 👰, e pai de duas 👶👶. <br>Graduado em Análise e Desenvolvimento de Sistemas 🎓 e agora, sou um estudante de Inglês 🇺🇸. <br>Tenho trabalhado como Desenvolvedor desde 2016 com diferentes tegnologias, mas atualmente<br>minha stack principal é Back-end com PHP 🐘, Laravel e MySQL. Atualmente eu trabalho como Engenheiro de Software 👨‍💻<br>na <a class='text-purple' href='https://www.softexpert.com/'>SoftExpert.</a><br>Todos os pacotes estão atualizados.</span><br>"
+                }
+            }
+        },
+        "education": {
+            "title": "Education",
+            "subtitle": "",
+            "info": [
+                {
+                    "title": "Graduado em Análise e Desenvolvimento de Sistemas pela UNOPAR",
+                    "subtitle": "Universidade Norte do Paraná",
+                    "date": "2015-2018"
+                },
+                {
+                    "title": "(Estudado por 1 ano) Sistemas de Informação pela UNC",
+                    "subtitle": "Universidade Contestado",
+                    "date": "2014"
+                }
+            ]
+        },
+        "skills_xp": {
+            "title": "Habilidades",
+            "subtitle": "Experiência",
+            "info": {
+                "skills": [
+                    {
+                        "icon": "fa-brands fa-php",
+                        "title": "PHP"
+                    },
+                    {
+                        "icon": "fa-brands fa-laravel",
+                        "title": "Laravel"
+                    },
+                    {
+                        "icon": "fa-solid fa-fire-flame-curved",
+                        "title": "Code Igniter"
+                    },
+                    {
+                        "icon": "fa-brands fa-js",
+                        "title": "Javascript"
+                    },
+                    {
+                        "icon": "fa-solid fa-database",
+                        "title": "MySQL"
+                    },
+                    {
+                        "icon": "fa-solid fa-database",
+                        "title": "PostgreSQL"
+                    },
+                    {
+                        "icon": "fa-brands fa-html5",
+                        "title": "HTML"
+                    },
+                    {
+                        "icon": "fa-brands fa-css3",
+                        "title": "CSS"
+                    },
+                    {
+                        "icon": "fa-brands fa-bootstrap",
+                        "title": "Bootstrap"
+                    },
+                    {
+                        "icon": "fa-brands fa-react",
+                        "title": "React"
+                    },
+                    {
+                        "icon": "fa-brands fa-vuejs",
+                        "title": "VueJS"
+                    },
+                    {
+                        "icon": "fa-brands fa-git",
+                        "title": "Git"
+                    },
+                    {
+                        "icon": "fa-brands fa-github",
+                        "title": "Github"
+                    },
+                    {
+                        "icon": "fa-brands fa-docker"
+                    }
+                ],
+                "experience": [
+                    {
+                        "title": "Engenheiro de Software - SoftExpert",
+                        "description": "Desenvolvimento e manutenção do Sistema tanto no backend quanto no frontend, com foco em soluções de excelência em Gestão e Compliance de Negócios. Análise e implementação de novos componentes e funcionalidades dentro do sistema, sempre visando sua qualidade e desempenho. Principais tecnologias e ferramentas utilizadas no dia a dia: PHP, PHPUnit, Doctrine, Rest, Javascript, React, PostgreSQL, Oracle, SQLServer, Docker, Git, Jira, Gitlab e Scrum para gerenciamento e planejamento de projetos.",
+                        "date": "2021 - atual"
+                    },
+                    {
+                        "title": "Desenvolvedor FullStack - ADM Informática",
+                        "description": "Desenvolvimento e manutenção de aplicativos, sites e sistemas web e desktop. Empresa que oferece sistemas para NF-e, NFC-e, CT-e, MDF-e, PAF-Ecf, entre outros mediante solicitação. Integração com API's próprias e de terceiros. Principais tecnologias utilizadas: PHP, Visual Basic 5, C#, Java, HTML e CSS, JavaScript, Access, MySQL; Frameworks: Code Igniter v3/v4, Laravel e Lumen, Bootstrap, Ionic 3",
+                        "date": "2018-2021"
+                    },
+                    {
+                        "title": "Freelancer Desenvolvedor FullStack - Canvas Studio",
+                        "description": "Manutenção e desenvolvimento de sites e sistemas web responsivos, tendo como principais tecnologias utilizadas, PHP - Code Igniter 3, JavaScript, HTML, CSS - Bootstrap e banco de dados MySQL.",
+                        "date": "2016-2019"
+                    },
+                    {
+                        "title": "Desenvolvedor FullStack - Support Informática",
+                        "description": "Desenvolvimento e manutenção de websites e sistemas web e desktop, utilizando tecnologias desktop como Visual Basic 6, Delphi, banco de dados MySQL e MsAccess. E tecnologias web como PHP, HTML, CSS e JavaScript (Jquery).",
+                        "date": "2016-2018"
+                    },
+                    {
+                        "title": "Analista de Suporte Técnico - Support Informática",
+                        "description": "Responsável pelo atendimento ao cliente via telefone e visitas técnicas no local. Suporte técnico ao cliente nos sistemas desenvolvidos. Orientação e treinamento dos sistemas oferecidos para clientes. Montagem e manutenção de computadores. Configuração e manutenção de servidores WTS.",
+                        "date": "2015-2016"
+                    },
+                    {
+                        "title": "Estagiário - Suporte Técnico - Support Informática",
+                        "description": "Atendimento e suporte de sistemas de emissão de Notas Fiscais ao cliente via telefone. Auxílio em serviços gerais internos.",
+                        "date": "2014-2015"
+                    },
+                    {
+                        "title": "Estagiário - INSS",
+                        "description": "Responsável pela gestão de documentos, organização e manutenção de arquivo. Digitalização, controle, manutenção e distribuição de processos.",
+                        "date": "2013-2014"
+                    },
+                    {
+                        "title": "Estagiário - Prefeitura Municipal Mafra-SC",
+                        "description": "Responsável pelo envio e recebimento de correspondências, serviços de cópias e serviços gerais internos.",
+                        "date": "2012-2013"
+                    }
+                ]
+            }
+        },
+        "works": {
+            "title": "Projetos",
+            "subtitle": "",
+            "info": {
+                "loadingText": "Buscando dados data, por favor aguarde.."
+            }
+        },
+        "contact": {
+            "title": "Contato",
+            "subtitle": "Estou feliz em conectar!!",
+            "info": [
+                {
+                    "href": "mailto:welleh10@gmail.com",
+                    "icon": "fa fa-envelope",
+                    "title": "E-mail"
+                },
+                {
+                    "href": "https://www.linkedin.com/in/wellisson-ribeiro-655a0b179/",
+                    "icon": "fab fa-linkedin",
+                    "title": "Linkedin"
+                },
+                {
+                    "href": "https://github.com/wribeiiro",
+                    "icon": "fab fa-github",
+                    "title": "Github"
+                },
+                {
+                    "href": "https://stackoverflow.com/users/7039025/wribeiro",
+                    "icon": "fab fa-stack-overflow",
+                    "title": "Stackoverflow"
+                }
+            ]
+        }
+    }
+}

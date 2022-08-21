@@ -1,16 +1,23 @@
+.work-container {
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto;
+    row-gap: 50px;
+}
+
 .work-item {
 	background: var(--dark-gray);
 	position: relative;
 	border-radius: 5px;
 	width: 250px;
 	height: 250px;
-	flex-grow: 1;
 }
 
 .work-info {
-	position: absolute;
-	left: 0;
-	top: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 	width: 100%;
 	color: var(--text);
 	padding: 0px 15px 0 15px;

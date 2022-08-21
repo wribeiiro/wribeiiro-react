@@ -1,31 +1,31 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-
+import parse from "html-react-parser";
 import './style.css';
 
-function Contact({ contactData }) {
+export default function Contact({ contactData }) {
 	return (
-		<div className="contact-container">
-            {contactData.map((contact, index) => {
-                return (
-                    <div
-                        className="contact-item"
-                        key={index}
-                    >
-                        <div className="contact-content">
-                            <a href={contact.href} target="_blank" rel="noopener noreferrer" title={contact.href}>
-                                <i className={contact.icon}></i>
-                            </a>
-                        </div>
-                    </div>
-                );
-            })}
-        </div>
+        <div className="contact-container">
+			{contactData.map((contact, index) => {
+				return (
+					<div
+						className="panel panel-default"
+						key={index}
+					>
+						<div className="panel-heading" role="tab" id="headingOne">
+							<h4 className="panel-title">
+								<a className="" href={contact.href}>
+                                    <i className={parse(contact.icon)}></i> {contact.title}
+                                </a>
+							</h4>
+						</div>
+					</div>
+				);
+			})}
+		</div>
 	);
 }
 
 Contact.propTypes = {
 	contactData: PropTypes.array.isRequired
 }
-
-export default Contact;

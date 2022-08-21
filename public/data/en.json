@@ -45,16 +45,15 @@
             "subtitle": "",
             "info": {
                 "banner": {
-                    "background": "https://www.wribeiiro.com/bg-min.jpg",
+                    "background": "https://cdna.artstation.com/p/assets/images/images/036/822/576/original/karina-formanova-cover-final.gif?1618727960",
                     "firstText": "Wellisson Ribeiro",
-                    "secondText": "PHP Software Engineer"
+                    "secondText": "Fullstack Developer"
                 },
                 "terminal": {
-                    "aboutCommand": "sudo --help aboutme",
+                    "sudoCommand": "sudo --help aboutme",
                     "userRoot": "root@wribeiiro:~$ ",
                     "userRootBlink": "root@wribeiiro:/usr/aboutme/$ <span class='blink'>_</span>",
-                    "aboutMe": "root@wribeiiro:~$ <span class='text-text'>sudo --help aboutme<br>Brazilian 🇧🇷 ${calculateMyYear()}y, christian ✝️, married 👰, and father of two kids 👶👶. <br>Gratuated in Analysis and Systems Development 🎓 and now, i am an english student 🇺🇸. <br>I've being working as Developer since 2016 with different technologies, but currently <br>my main stack is Back-end with PHP 🐘, Laravel and MySQL. Currently i work as a Software Engineer 👨‍💻 at <a class='text-purple' href='https://www.softexpert.com/'>SoftExpert.</a><br>All packages are up to date</span><br>",
-                    "aboutComplete": ""
+                    "aboutComplete": "root@wribeiiro:~$ <span class='text-text'>sudo --help aboutme<br>Brazilian 🇧🇷 {myyear}y, christian ✝️, married 👰, and father of two kids 👶👶. <br>Gratuated in Analysis and Systems Development 🎓 and now, i am an english student 🇺🇸. <br>I've been working as Developer since 2016 with different technologies, but currently <br>my main stack is Back-end with PHP 🐘, Laravel and MySQL. Currently i work as a Software Engineer 👨‍💻 at <a class='text-purple' href='https://www.softexpert.com/'>SoftExpert.</a><br>All packages are up to date</span><br>"
                 }
             }
         },
@@ -68,15 +67,15 @@
                     "date": "2015-2018"
                 },
                 {
-                    "title": "Sistemas de Informação (Studied for 1 year) At UNC",
+                    "title": "(Studied for 1 year) Sistemas de Informação At UNC",
                     "subtitle": "Universidade Contestado",
                     "date": "2014"
                 }
             ]
         },
         "skills_xp": {
-            "title": "Education",
-            "subtitle": "",
+            "title": "Skills",
+            "subtitle": "Experience",
             "info": {
                 "skills": [
                     {
@@ -134,50 +133,57 @@
                     {
                         "icon": "fa-brands fa-docker"
                     }
+                ],
+                "experience": [
+                    {
+                        "title": "Software Engineer at SoftExpert",
+                        "description": "Development and maintenance of the System in both the backend and the frontend, focusing on solutions for excellence in Management and Business Compliance. Analysis and implementation of new components and functionalities within the system, always aiming at their quality and performance. Main technologies and tools used on a daily basis: PHP, PHPUnit, Doctrine, Rest, Javascript, React, PostgreSQL, Oracle, SQLServer, Docker, Git, Jira, Gitlab and Scrum for project management and planning.",
+                        "date": "2021 until now"
+                    },
+                    {
+                        "title": "Full Stack Developer at ADM Informática",
+                        "description": "Development and maintenance of applications, websites and web and desktop systems. Company that offers systems for NF-e, NFC-e, CT-e, MDF-e, PAF-Ecf, among others upon request. Integration with own and third-party API's. Main technologies used: PHP, Visual Basic 5, C#, Java, HTML and CSS, JavaScript, Access, MySQL; Frameworks: Code Igniter v3/v4, Laravel and Lumen, Bootstrap, Ionic 3;",
+                        "date": "2018-2021"
+                    },
+                    {
+                        "title": "Freelancer Full Stack Developer at Canvas Studio",
+                        "description": "Maintenance and development of responsive websites and web systems, having as main technologies used, PHP - Code Igniter 3, JavaScript, HTML, CSS - Bootstrap and MySQL database.",
+                        "date": "2016-2019"
+                    },
+                    {
+                        "title": "Full Stack Developer at Support Informática",
+                        "description": "Development and maintenance of websites and web and desktop systems, using desktop technologies such as Visual Basic 6, Delphi, MySQL database and MsAccess. And web technologies like PHP, HTML, CSS and JavaScript (Jquery). Company that offers systems for NF-e, NFC-e, CT-e, MDF-e, PAF-Ecf, among others upon request.",
+                        "date": "2016-2018"
+                    },
+                    {
+                        "title": "Analist of Support at Support Informática",
+                        "description": "Responsible for customer service via phone and in person. Customer technical support on developed systems. Assembly and maintenance of computers. Configuration and maintenance of WTS servers.",
+                        "date": "2015-2016"
+                    },
+                    {
+                        "title": "Technical Support Intern - Support Informática",
+                        "description": "Service and support of Invoice issuance systems to the customer via telephone. Assistance in general internal services.",
+                        "date": "2014-2015"
+                    },
+                    {
+                        "title": "Intern at INSS",
+                        "description": "Responsible for managing documents, organizing and maintaining the archive. Digitization, control, maintenance and distribution of processes.",
+                        "date": "2013-2014"
+                    },
+                    {
+                        "title": "Intern at Prefeitura Municipal Mafra-SC",
+                        "description": "Responsible for posting and receiving correspondence, copying services and general internal services.",
+                        "date": "2012-2013"
+                    }
                 ]
-            },
-            "experience": [
-                {
-                    "title": "Software Engineer at SoftExpert",
-                    "description": "Development and maintenance of the System in both the backend and the frontend, focusing on solutions for excellence in Management and Business Compliance. Analysis and implementation of new components and functionalities within the system, always aiming at their quality and performance. Main technologies and tools used on a daily basis: PHP, PHPUnit, Doctrine, Rest, Javascript, React, PostgreSQL, Oracle, SQLServer, Docker, Git, Jira, Gitlab and Scrum for project management and planning.",
-                    "date": "2021 until now"
-                },
-                {
-                    "title": "Full Stack Developer at ADM Informática",
-                    "description": "Development and maintenance of applications, websites and web and desktop systems. Company that offers systems for NF-e, NFC-e, CT-e, MDF-e, PAF-Ecf, among others upon request. Integration with own and third-party API's. Main technologies used: PHP, Visual Basic 5, C#, Java, HTML and CSS, JavaScript, Access, MySQL; Frameworks: Code Igniter v3/v4, Laravel and Lumen, Bootstrap, Ionic 3;",
-                    "date": "2018-2021"
-                },
-                {
-                    "title": "Freelancer Full Stack Developer at Canvas Studio",
-                    "description": "Maintenance and development of responsive websites and web systems, having as main technologies used, PHP - Code Igniter 3, JavaScript, HTML, CSS - Bootstrap and MySQL database.",
-                    "date": "2016-2019"
-                },
-                {
-                    "title": "Full Stack Developer at Support Informática",
-                    "description": "Development and maintenance of websites and web and desktop systems, using desktop technologies such as Visual Basic 6, Delphi, MySQL database and MsAccess. And web technologies like PHP, HTML, CSS and JavaScript (Jquery).",
-                    "date": "2016-2018"
-                },
-                {
-                    "title": "Analist of Support at Support Informática",
-                    "description": "Responsible for customer service via phone and in person. Customer technical support on developed systems. Assembly and maintenance of computers. Configuration and maintenance of WTS servers.",
-                    "date": "2014-2016"
-                },
-                {
-                    "title": "Intern at INSS",
-                    "description": "Responsible for managing documents, organizing and maintaining the archive. Digitization, control, maintenance and distribution of processes.",
-                    "date": "2013-2014"
-                },
-                {
-                    "title": "Intern at Prefeitura Municipal Mafra-SC",
-                    "description": "Responsible for posting and receiving correspondence, copying services and general internal services.",
-                    "date": "2012-2013"
-                }
-            ]
+            }
         },
         "works": {
             "title": "Works",
             "subtitle": "",
-            "info": []
+            "info": {
+                "loadingText": "Fetching data, please wait..."
+            }
         },
         "contact": {
             "title": "Contact",

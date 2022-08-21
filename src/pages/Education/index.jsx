@@ -1,32 +1,26 @@
-import React from 'react';
-
+import React, { useContext } from 'react';
 import Education from '../../components/Education';
+import TranslationContext from "../../context/TranslationContext";
 
-function EducationPage() {
-	const educationData = [
-		{
-			title: "Graduated in Análise e Desenvolvimento de Sistemas At UNOPAR <br> - Universidade Norte do Paraná ",
-			date: "2015-2018",
-		},
-		{
-			title: "Sistemas de Informação (Studied for 1 year) At UNC <br> - Universidade Contestado",
-			date: "2014",
-		},
-	];
+export default function EducationPage() {
+
+    const {
+        getTranslationFromStorage,
+    } = useContext(TranslationContext);
+
+    const { pages: { education } } = getTranslationFromStorage();
 
 	return (
 		<div>
 			<section className="education">
 				<div className="info">
 					<div className="title">
-						<h2>Education</h2>
+						<h2>{education.title}</h2>
 					</div>
 
-					<Education educationData={educationData}/>
+					<Education educationData={education.info}/>
 				</div>
 			</section>
 		</div>
   	);
 }
-
-export default EducationPage;

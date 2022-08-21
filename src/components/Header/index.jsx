@@ -1,17 +1,22 @@
 import React, { Fragment, useEffect, useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import TranslationContext from "../../context/TranslationContext";
-
 import './style.css';
 
-function Header() {
-    const { getTranslationFromStorage, getOptionTranslationFromStorage, setTranslationInStorage } = useContext(TranslationContext);
+export default function Header() {
+    const {
+        getTranslationFromStorage,
+        getOptionTranslationFromStorage,
+        setTranslationInStorage
+    } = useContext(TranslationContext);
+
     const [language, setLanguage] = useState('en');
     const { menu } = getTranslationFromStorage();
 
     const saveLanguage = (event) => {
         setTranslationInStorage(event.target.value);
         setLanguage(event.target.value);
+        window.location.reload();
     }
 
     useEffect(() => {
@@ -44,5 +49,3 @@ function Header() {
 		</Fragment>
   	);
 }
-
-export default Header;

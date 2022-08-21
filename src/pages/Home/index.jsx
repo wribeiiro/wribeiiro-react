@@ -1,24 +1,23 @@
-import React from 'react';
-import { Fragment } from 'react';
-
+import React, { Fragment,  useContext } from 'react';
+import TranslationContext from "../../context/TranslationContext";
 import Home from '../../components/Home';
 
-function HomePage() {
-    const data = {
-        background: 'https://www.wribeiiro.com/bg-min.jpg',
-        centerText: "Fullstack Developer",
-        terminalTitle: "root@wribeiiro: ~"
-    }
+export default function HomePage() {
+
+    const {
+        getTranslationFromStorage,
+    } = useContext(TranslationContext);
+
+    const { pages: { home } } = getTranslationFromStorage();
 
     return (
         <Fragment>
             <section className="home">
                 <div className="banner">
                     <Home
-                        background={data.background}
-                        centerText={data.centerText}
-                        terminalTitle={data.terminalTitle}
-                        aboutText={data.terminalTitle}
+                        background={home.info.banner.background}
+                        centerText={home.info.banner.secondText}
+                        terminalInfo={home.info.terminal}
                     >
                     </Home>
                 </div>
@@ -26,5 +25,3 @@ function HomePage() {
         </Fragment>
     );
 }
-
-export default HomePage;

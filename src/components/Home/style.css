@@ -5,8 +5,8 @@
 
 .banner-image {
     min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@
 .banner-image:before {
     position: absolute;
     content: '';
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
     top: 0;
     left: 0;
     height: 100%;

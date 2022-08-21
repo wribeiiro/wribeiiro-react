@@ -1,11 +1,9 @@
-import React from 'react';
-import { Fragment } from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types'; // ES6
-
+import Terminal from '../Terminal';
 import './style.css';
-import Terminal from '../../components/Terminal';
 
-function Home({ background, centerText, terminalTitle, aboutText }) {
+export default function Home({ background, centerText, terminalInfo }) {
 	return (
 		<Fragment>
 			<div className="home banner">
@@ -22,11 +20,7 @@ function Home({ background, centerText, terminalTitle, aboutText }) {
                             </div>
                         </div>
 
-                        <Terminal
-                            aboutText={aboutText}
-                            terminalTitle={terminalTitle}
-                        >
-                        </Terminal>
+                        <Terminal terminalInfo={terminalInfo}/>
                     </div>
 				</div>
 			</div>
@@ -37,8 +31,5 @@ function Home({ background, centerText, terminalTitle, aboutText }) {
 Home.propTypes = {
 	background: PropTypes.string.isRequired,
 	centerText: PropTypes.string.isRequired,
-	aboutText: PropTypes.string.isRequired,
-	terminalTitle: PropTypes.string.isRequired
+    terminalInfo: PropTypes.object.isRequired
 }
-
-export default Home;
