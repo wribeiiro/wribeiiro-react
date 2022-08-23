@@ -1,8 +1,8 @@
 import React, { useState, useEffect} from 'react';
 import {
-    BrowserRouter as Router,
     Switch,
-    Route
+    Route,
+    HashRouter
 } from 'react-router-dom';
 
 import HomePage from './pages/Home';
@@ -54,7 +54,7 @@ export default function App() {
     }, []);
 
 	return translation && (
-        <Router>
+        <HashRouter>
             <TranslationContext.Provider
                 value={{
                     translation,
@@ -76,6 +76,6 @@ export default function App() {
                     </div>
                 </div>
             </TranslationContext.Provider>
-        </Router>
+        </HashRouter>
 	);
 }
