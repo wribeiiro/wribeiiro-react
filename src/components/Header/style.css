@@ -63,7 +63,7 @@
 .sidebar ul a:hover,
 ul a:active,
 ul a:focus {
-	border-left: solid 5px var(--purple);
+	border-left: solid 5px var(--red);
 	color: var(--text);
 	text-decoration: none;
 	outline: 0;
@@ -71,7 +71,7 @@ ul a:focus {
 }
 
 .sidebar ul .link-active {
-	border-left: solid 5px var(--purple);
+	border-left: solid 5px var(--red);
 	color: var(--text);
 }
 
@@ -102,7 +102,7 @@ ul a:focus {
 }
 
 .sidebar__avatar span {
-	color: var(--purple);
+	color: var(--red);
 	transition: 0.5s;
 	text-align: center;
 }

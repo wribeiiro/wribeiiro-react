@@ -51,7 +51,7 @@
     display: block;
     width: 40px;
     height: 40px;
-    background: var(--purple);
+    background: var(--red);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -107,6 +107,6 @@
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 span {
-    color: var(--vue);
+    color: var(--red);
     font-size: 16px;
 }

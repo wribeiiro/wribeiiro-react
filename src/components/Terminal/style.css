@@ -9,7 +9,7 @@
 
 .terminal .body {
 	background: var(--dark-gray);
-	color: var(--purple);
+	color: var(--red);
 	padding: 8px;
 	overflow: auto;
 	height: 350px;

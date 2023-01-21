@@ -12,7 +12,7 @@
     background: var(--dark-gray);
     padding: 25px;
     border-radius: 5px;
-    border-left: solid 5px var(--vue);
+    border-left: solid 5px var(--red);
     position: relative;
     margin-bottom: 25px;
     width: 100%;
@@ -20,7 +20,7 @@
 }
 
 .panel.panel-default:hover {
-    border-left: solid 5px var(--purple);
+    border-left: solid 5px var(--text);
 }
 
 .panel-title a {

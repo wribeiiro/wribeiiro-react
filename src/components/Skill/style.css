@@ -18,8 +18,12 @@
 	cursor: pointer;
 }
 
+.skill-item i {
+	color: var(--red);
+}
+
 .skill-item i:hover {
-	color: var(--vue);
+	color: var(--text);
 }
 
 .skill-content {

@@ -16,10 +16,10 @@
     "react-scripts": "3.4.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "test": "react-scripts --openssl-legacy-provider test",
+    "eject": "react-scripts --openssl-legacy-provider eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,5 +39,5 @@
   "devDependencies": {
     "react-error-overlay": "^6.0.9"
   },
-  "build_staging": "PUBLIC_URL=https://www.wribeiiro.com react-scripts build"
+  "build_staging": "PUBLIC_URL=https://www.wribeiiro.com react-scripts --openssl-legacy-provider build"
 }
