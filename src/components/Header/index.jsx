@@ -21,7 +21,7 @@ export default function Header() {
 
     useEffect(() => {
         setLanguage(getOptionTranslationFromStorage());
-    }, []);
+    }, [getOptionTranslationFromStorage]);
 
 	return (
 		<Fragment>
@@ -41,7 +41,26 @@ export default function Header() {
 				</div>
 				<ul>
                     {menu.items.map((value, index) => {
-                        return <Link key={index} to={value.route} className="btn mr-5"> &#62; {value.name} </Link>;
+
+                        if (value.name.toLowerCase() !== 'store') {
+                            return <Link
+                                key={index}
+                                to={value.route}
+                                className="btn mr-5"
+                            >
+                                &#62; {value.name}
+                            </Link>;
+                        }
+
+                        return <a
+                            key={index}
+                            className="btn mr-5"
+                            href={value.route}
+                            rel="noopener noreferrer"
+                            target="_blank"
+                        >
+                            &#62; {value.name}
+                        </a>;
                     })}
 				</ul>
 			</div>

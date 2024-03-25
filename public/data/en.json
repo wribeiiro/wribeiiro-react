@@ -1,7 +1,6 @@
 {
     "menu": {
-        "items": [
-            {
+        "items": [{
                 "name": "Home",
                 "route": "/"
             },
@@ -14,21 +13,20 @@
                 "route": "/skills"
             },
             {
-                "name": "Works & Projects",
-                "route": "/works"
-            },
-            {
                 "name": "Contact",
                 "route": "/contact"
+            },
+            {
+                "name": "Store",
+                "route": "https://reserva.ink/wr7"
             }
         ],
         "info": {
             "avatar": "https://avatars.githubusercontent.com/u/20648572?s=460&u=47a55caca6dbc315d1932aaf77eefa20b2002baf&v=4",
             "firstText": "Wellisson Ribeiro",
-            "secondText": "Backend Developer ~ ",
+            "secondText": "Fullstack Developer",
             "thirdText": "English Student",
-            "languageOptions": [
-                {
+            "languageOptions": [{
                     "name": "🇺🇸 English",
                     "value": "en"
                 },
@@ -45,23 +43,22 @@
             "subtitle": "",
             "info": {
                 "banner": {
-                    "background": "https://cdna.artstation.com/p/assets/images/images/036/822/576/original/karina-formanova-cover-final.gif?1618727960",
+                    "background": "/bg3.gif",
                     "firstText": "Wellisson Ribeiro",
-                    "secondText": "Backend Developer"
+                    "secondText": "Fullstack Developer"
                 },
                 "terminal": {
                     "sudoCommand": "sudo --help aboutme",
                     "userRoot": "root@wribeiiro:~$ ",
                     "userRootBlink": "root@wribeiiro:/usr/aboutme/$ <span class='blink'>_</span>",
-                    "aboutComplete": "root@wribeiiro:~$ <span class='text-text'>sudo --help aboutme<br>Brazilian 🇧🇷 {myyear}y, christian ✝️️, married 👰‍♀️, and father of two kids 👶👶.<br>In the last few months I became an English student 🇺🇸.<br>I have almost 6 years of experience in the development area, I've used several different tecnologies and languages,<br>also i worked as fullstack most of this time, but what I really like is the backend.<br>Currently I'm Software Engineer at SoftExpert. I'm passionate about PHP, Laravel 🐘 and Databases 🐬.<br>All packages are up to date</span><br>"
+                    "aboutComplete": "root@wribeiiro:~$ <span class='text-text'>sudo --help aboutme<br>Brazilian 🇧🇷 {myyear}y, christian ✝️️, married 👰‍♀️, and father of two 👶👶.<br>I have almost 7 years of experience in the development area, I've used several different tecnologies and languages,<br>also i worked as fullstack most of this time, but what I really like is the backend.<br>Currently I'm Software Engineer at SoftExpert. I'm passionate about PHP, Laravel 🐘 and Databases 🐬.<br>All packages are up to date</span><br>"
                 }
             }
         },
         "education": {
             "title": "Education",
             "subtitle": "",
-            "info": [
-                {
+            "info": [{
                     "title": "Graduated in Análise e Desenvolvimento de Sistemas At UNOPAR",
                     "subtitle": "Universidade Norte do Paraná",
                     "date": "2015-2018"
@@ -77,8 +74,7 @@
             "title": "Skills",
             "subtitle": "Experience",
             "info": {
-                "skills": [
-                    {
+                "skills": [{
                         "icon": "fa-brands fa-php",
                         "title": "PHP"
                     },
@@ -134,8 +130,7 @@
                         "icon": "fa-brands fa-docker"
                     }
                 ],
-                "experience": [
-                    {
+                "experience": [{
                         "title": "Software Engineer at SoftExpert",
                         "description": "Development and maintenance of the System in both the backend and the frontend, focusing on solutions for excellence in Management and Business Compliance. Analysis and implementation of new components and functionalities within the system, always aiming at their quality and performance. Main technologies and tools used on a daily basis: PHP, PHPUnit, Doctrine, Rest, Javascript, React, PostgreSQL, Oracle, SQLServer, Docker, Git, Jira, Gitlab and Scrum for project management and planning.",
                         "date": "2021 until now"
@@ -188,8 +183,7 @@
         "contact": {
             "title": "Contact",
             "subtitle": "I'm glad to connect!!",
-            "info": [
-                {
+            "info": [{
                     "href": "mailto:welleh10@gmail.com",
                     "icon": "fa fa-envelope",
                     "title": "E-mail"
@@ -208,6 +202,11 @@
                     "href": "https://stackoverflow.com/users/7039025/wribeiro",
                     "icon": "fab fa-stack-overflow",
                     "title": "Stackoverflow"
+                },
+                {
+                    "href": "https://reserva.ink/wr7",
+                    "icon": "fas fa-store",
+                    "title": "Store"
                 }
             ]
         }

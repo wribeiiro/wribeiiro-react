@@ -16,7 +16,7 @@
 .banner-image:before {
     position: absolute;
     content: '';
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
     top: 0;
     left: 0;
     height: 100%;

@@ -1,7 +1,6 @@
 {
     "menu": {
-        "items": [
-            {
+        "items": [{
                 "name": "Início",
                 "route": "/"
             },
@@ -14,21 +13,20 @@
                 "route": "/skills"
             },
             {
-                "name": "Projetos",
-                "route": "/works"
-            },
-            {
                 "name": "Contato",
                 "route": "/contact"
+            },
+            {
+                "name": "Loja",
+                "route": "https://reserva.ink/wr7"
             }
         ],
         "info": {
             "avatar": "https://avatars.githubusercontent.com/u/20648572?s=460&u=47a55caca6dbc315d1932aaf77eefa20b2002baf&v=4",
             "firstText": "Wellisson Ribeiro",
-            "secondText": "Desenvolvedor Backend ~ ",
+            "secondText": "Desenvolvedor Fullstack",
             "thirdText": "Estudande de Inglês",
-            "languageOptions": [
-                {
+            "languageOptions": [{
                     "name": "🇺🇸 Inglês",
                     "value": "en"
                 },
@@ -45,23 +43,22 @@
             "subtitle": "",
             "info": {
                 "banner": {
-                    "background": "https://cdna.artstation.com/p/assets/images/images/036/822/576/original/karina-formanova-cover-final.gif?1618727960",
+                    "background": "/bg3.gif",
                     "firstText": "Wellisson Ribeiro",
-                    "secondText": "Desenvolvedor Backend"
+                    "secondText": "Desenvolvedor Fullstack"
                 },
                 "terminal": {
                     "sudoCommand": "sudo --ajuda sobremim",
                     "userRoot": "root@wribeiiro:~$ ",
                     "userRootBlink": "root@wribeiiro:/usr/aboutme/$ <span class='blink'>_</span>",
-                    "aboutComplete": "root@wribeiiro:~$ <span class='text-text'>sudo --ajuda sobremim<br>Brasileiro 🇧🇷 {myyear}, cristão ✝️, casado 👰, e pai de duas 👶👶.<br>Nos últimos meses me tornei estudante de inglês 🇺🇸.<br>Tenho quase 6 anos de experiência na área de desenvolvimento, já utilizei diversas tecnologias e linguagens diferentes,<br>também trabalhei como fullstack na maior parte do tempo, mas o que gosto mesmo é do backend.<br>Atualmente sou Engenheiro de Software na SoftExpert. Sou apaixonado por PHP, Laravel 🐘 e Bancos de Dados 🐬.<br>Todos os pacotes estão atualizados.</span><br>"
+                    "aboutComplete": "root@wribeiiro:~$ <span class='text-text'>sudo --ajuda sobremim<br>Brasileiro 🇧🇷 {myyear}, cristão ✝️, casado 👰, e pai de duas 👶👶.<br>Tenho quase 7 anos de experiência na área de desenvolvimento, já utilizei diversas tecnologias e linguagens diferentes,<br>também trabalhei como fullstack na maior parte do tempo, mas o que gosto mesmo é do backend.<br>Atualmente sou Engenheiro de Software na SoftExpert. Sou apaixonado por PHP, Laravel 🐘 e Bancos de Dados 🐬.<br>Todos os pacotes estão atualizados.</span><br>"
                 }
             }
         },
         "education": {
             "title": "Education",
             "subtitle": "",
-            "info": [
-                {
+            "info": [{
                     "title": "Graduado em Análise e Desenvolvimento de Sistemas pela UNOPAR",
                     "subtitle": "Universidade Norte do Paraná",
                     "date": "2015-2018"
@@ -77,8 +74,7 @@
             "title": "Habilidades",
             "subtitle": "Experiência",
             "info": {
-                "skills": [
-                    {
+                "skills": [{
                         "icon": "fa-brands fa-php",
                         "title": "PHP"
                     },
@@ -134,8 +130,7 @@
                         "icon": "fa-brands fa-docker"
                     }
                 ],
-                "experience": [
-                    {
+                "experience": [{
                         "title": "Engenheiro de Software - SoftExpert",
                         "description": "Desenvolvimento e manutenção do Sistema tanto no backend quanto no frontend, com foco em soluções de excelência em Gestão e Compliance de Negócios. Análise e implementação de novos componentes e funcionalidades dentro do sistema, sempre visando sua qualidade e desempenho. Principais tecnologias e ferramentas utilizadas no dia a dia: PHP, PHPUnit, Doctrine, Rest, Javascript, React, PostgreSQL, Oracle, SQLServer, Docker, Git, Jira, Gitlab e Scrum para gerenciamento e planejamento de projetos.",
                         "date": "2021 - atual"
@@ -188,8 +183,7 @@
         "contact": {
             "title": "Contato",
             "subtitle": "Estou feliz em conectar!!",
-            "info": [
-                {
+            "info": [{
                     "href": "mailto:welleh10@gmail.com",
                     "icon": "fa fa-envelope",
                     "title": "E-mail"
@@ -208,6 +202,11 @@
                     "href": "https://stackoverflow.com/users/7039025/wribeiro",
                     "icon": "fab fa-stack-overflow",
                     "title": "Stackoverflow"
+                },
+                {
+                    "href": "https://reserva.ink/wr7",
+                    "icon": "fas fa-store",
+                    "title": "Loja"
                 }
             ]
         }
